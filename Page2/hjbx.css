@@ -1,0 +1,1057 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:#0e1728;
+    --important_text-color:#3a9efd;
+    --text-color:#3e4491;
+    --link-color:#f7a400;
+    --search-bar-background-color:#3f3f45;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+header{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+overflow: hidden;
+}
+                                   /* designing navigation bar  */
+
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    background-color: var(--background-color);
+ }
+ .navbar ul{
+    display: flex;
+    list-style-type: none;
+    background-color: var(--custom-color);
+}       
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.logo img{
+    height: 2.3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.logo .website-name{
+    color: var(--link-color);
+    margin-left: 0.2rem;
+    padding-top: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.navbar ul li:nth-child(2){
+   color: var(--important_text-color);
+   margin-left:4rem ;
+   padding-top: 0.3rem;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   margin-top: 0.9rem;
+}
+.navbar ul li:nth-child(3) {
+   width: 15rem;
+   height: 1.8rem;
+   background-color:var(--search-bar-background-color);
+   opacity: 0.7;
+   display: flex;
+   align-items: center;
+   border-radius: 4px ;
+   padding: 0.2rem 0.3rem;
+   margin-left: 10rem;
+   margin-top: 0.5rem;
+}
+.navbar ul li:nth-child(3) input{
+    background-color: var(--search-bar-background-color);
+    flex:1;
+    height: 1.4rem;
+    border: 0;
+    outline: none;
+    padding-left: 0.2rem;
+    font-size: 1rem;
+    font-weight:600;
+    color: white;
+}
+::placeholder{
+    color: gray;
+}
+.navbar ul li:nth-child(3) svg{
+   color: white;
+   cursor: pointer;
+}
+ .navbar ul li:nth-child(4){
+    color: white;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    padding-top: 0.8rem;
+ }
+ .navbar ul li:nth-child(5) {
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+    padding-top: 0.8rem;
+ }
+
+                                           /* Navigation bar end  */
+
+
+                                          /* Header left start  */
+ header .header-left 
+ {
+     width: 72%;
+     height: 80%;
+     background-color: var(--background-color);
+     overflow: auto;
+ }
+ header .header-left::-webkit-scrollbar{
+    display: none;
+ }
+ header .header-left .advertisement{
+   width: 90%;
+   height: 17rem;
+   margin-top: 0.5rem;
+   margin-left: 1.5rem;
+   background-color: #17253f;
+   display: flex;
+ }
+ header .header-left .advertisement img{
+    height: 100%;
+    width: 37%;
+    transition: 0.7s;
+ }
+ header .header-left .advertisement .data{
+    width: 60%;
+    height: 99%;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+    flex-direction: column; 
+ }
+ header .header-left .advertisement .data .heading{
+    width: 100%;
+    height: 28%;
+    display: flex;
+ }
+ header .header-left .advertisement .data .heading .heading1{
+    height: 100%;
+    width: 30%;
+    line-height: 0.6rem;
+    padding-top: 1.7rem;
+ }
+ header .header-left .advertisement .data .heading .heading1 h5{
+    color: white;
+    font-size: 1.3rem;
+ }
+ header .header-left .advertisement .data .heading .heading1  .subtitle{
+    color: darkgray;
+    font-size: 0.7rem;
+    margin-left:0.3rem;
+ }
+ header .header-left .advertisement .data .heading .heading2{
+     width: 70%;
+     height: 100%;
+     margin-left: 4rem;
+     color: darkgray;
+     font-size: 0.7rem;
+     padding-top: 2.4rem;
+     margin-right: 3rem;
+ }
+ header .header-left .advertisement .data .content{
+    width: 100%;
+    height: 35%;
+    color: darkgray;
+    font-size: 0.7rem;
+    font-weight:100;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    padding: 0 0.5rem;
+    overflow: hidden;
+ }
+ header .header-left .advertisement .data .button-and-follow{
+height: 37%;
+width: 100%;
+display: flex;
+ }
+ button{
+    height: 2rem;
+    width:6.5rem;
+    margin-top: 0.8rem;
+    margin-left: 0.8rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background:#131f34;
+    letter-spacing: 1.5px ;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:  0 0 4px #0f192b, 0 0 4px #0c1524;
+ }
+ button:hover{
+    color: #0ff;
+    border: 3px solid #0ff;
+    border-radius: 100px;
+    box-shadow:  0 0 10px #0ff, 0 0 15px #0ff;
+ }
+ header .header-left .list{
+    height: 11.9rem;
+    width: 90%;
+    margin-left: 1.3rem;
+    margin-top: 0.5rem;
+    overflow: auto;
+ }
+ header .header-left .list::-webkit-scrollbar{
+   display: none;
+ }
+ header .header-left .list .list-item{
+width: 100%;
+height: 2.6rem;
+background-color: #182132;
+margin-top: 0.3rem;
+margin-left: 0.2rem;
+display: flex;
+ }
+ header .header-left .list .list-item:hover{
+ box-shadow:  0 0 4px #1b2941, 0 0 4px #1b2941;
+ }
+ header .header-left .list .list-item h2{
+    color: darkgray;
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+ }
+ header .header-left .list .list-item img{
+    height: 90%;
+    width: 7%;
+    margin-top: 0.1rem;
+    margin-left: 1rem;
+ }
+ header .header-left .list .list-item h5{
+    width: 25%;
+    height: 100%;
+    font-size: 0.7rem;
+    color: white;
+    margin-left: 0.4rem;
+    overflow: hidden;
+    font-weight: 25px;
+    padding-top: 0.5rem;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+ header .header-left .list .list-item h5 .subtitle{
+    font-size: 0.5rem;
+    color: darkgray;
+    margin-left: 0.1rem;
+ }
+ header .header-left .list .list-item .heart-icon{
+    color: darkgray;
+    margin-top: 0.8rem;
+    margin-left: 16rem;
+ }
+ header .header-left .list .list-item .add-icon{
+    color: darkgray;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+ }
+ header .header-left .Latest-{
+   width:90%;
+   margin-top: 0.4rem;
+   height: 10rem;
+   margin-left: 0.4rem;
+   display: none;
+   overflow: auto;
+}
+header .header-left .Latest-::-webkit-scrollbar{
+   display: none;
+}
+   header .header-left .Latest- h5{
+       color: white;
+       font-size: 1rem;
+       font-weight: bold;
+   }
+   header .header-left .Latest- .Latest--List{
+       width: 94%;
+       height: 8rem;
+       margin-left: 0.2rem;
+       display: flex;
+   }
+   header .header-left .Latest- .Latest--List .Latest--item{
+       height: 100%;
+       width: 15%;
+       margin-left: 0.7rem;
+       box-shadow: 2px 2px 2px 2px rgba(28, 88, 109, 0.5);
+   }
+   header .header-left .Latest- .Latest--List .Latest--item img{
+       width: 90%;
+       height: 70%;
+       margin-left: 0.2rem;
+       cursor: pointer;
+   }
+   header .header-left .Latest- .Latest--List .Latest--item h4{
+       color: white;
+       font-size: 0.7rem;
+       margin-top: 0.4rem;
+       margin-left: 0.3rem;
+   }
+   header .header-left .Latest- .Latest--List .Latest--item h4 .subtitle{
+       color: gray;
+       font-size: 0.4rem;
+   }
+ header .header-left .Latest-English{
+   width:90%;
+   height: 10rem;
+   margin-left: 0.4rem;
+   display: none;
+   }
+   header .header-left .Latest-English h5{
+       color: white;
+       font-size: 1rem;
+       font-weight: bold;
+   }
+   header .header-left .Latest-English .Latest-English-List{
+       width: 94%;
+       height: 8rem;
+       margin-left: 0.2rem;
+       display: flex;
+       overflow: auto;
+   }
+   header .header-left .Latest-English .Latest-English-List::-webkit-scrollbar{
+      display: none;
+   }
+   header .header-left .Latest-English .Latest-English-List .Latest-English-item{
+       height: 100%;
+       width: 15%;
+       margin-left: 0.7rem;
+       box-shadow: 2px 2px 2px 2px rgba(28, 88, 109, 0.5);
+   }
+   header .header-left .Latest-English .Latest-English-List .Latest-English-item img{
+       width: 95%;
+       height: 70%;
+       margin-left: 0.2rem;
+       cursor: pointer;
+   }
+   header .header-left .Latest-English .Latest-English-List .Latest-English-item h4{
+       color: white;
+       font-size: 0.7rem;
+       margin-top: 0.4rem;
+       margin-left: 0.3rem;
+   }
+   header .header-left .Latest-English .Latest-English-List .Latest-English-item h4 .subtitle{
+       color: gray;
+       font-size: 0.4rem;
+   }
+   header .header-left .Latest-Hindi{
+      width:90%;
+      height: 10rem;
+      margin-left: 0.4rem;
+      display: none;
+      }
+      header .header-left .Latest-Hindi h5{
+          color: white;
+          font-size: 1rem;
+          font-weight: bold;
+      }
+      header .header-left .Latest-Hindi .Latest-Hindi-List{
+          width: 94%;
+          height: 8rem;
+          display: flex;
+          overflow: auto;
+          margin-left: 0.5rem;
+      }
+      header .header-left .Latest-Hindi .Latest-Hindi-List::-webkit-scrollbar{
+          display: none;
+      }
+      header .header-left .Latest-Hindi .Latest-Hindi-List .Latest-Hindi-item{
+          height: 100%;
+          width: 15%;
+          margin-left: 0.7rem;
+          box-shadow: 2px 2px 2px 2px rgba(28, 88, 109, 0.5);
+      }
+      header .header-left .Latest-Hindi .Latest-Hindi-List .Latest-Hindi-item img{
+          width: 90%;
+          height: 70%;
+          margin-left: 0.2rem;
+          cursor: pointer;
+      }
+      header .header-left .Latest-Hindi .Latest-Hindi-List .Latest-Hindi-item h4{
+          color: white;
+          font-size: 0.7rem;
+          margin-top: 0.4rem;
+          margin-left: 0.3rem;
+      }
+      header .header-left .Latest-Hindi .Latest-Hindi-List .Latest-Hindi-item h4 .subtitle{
+          color: gray;
+          font-size: 0.4rem;
+      }
+
+                                       /* Header left end  */
+
+
+
+                                       /* Header right start  */
+ .header-right{
+    width: 28%;
+    height:80%;
+    background-color: var(--background-color);
+ }
+ .header-right .right-upper{
+    height: 50%;
+    width: 100%;
+ }
+ .header-right .right-upper .right-upper-heading{
+width: 100%;
+height: 17%;
+display: flex;
+ }
+ .header-right .right-upper .right-upper-heading h5{
+color: white;
+font-size: 1.2rem;
+font-weight: 700;
+letter-spacing: 0.5px;
+margin-top: 0.4rem;
+margin-left: 0.2rem;
+ }
+ .header-right .right-upper .right-upper-heading .view-all{
+    color: white;
+    font-size: 0.6rem;
+    letter-spacing: 0.4px;
+    margin-left: 3rem;
+    margin-top: 0.9rem;
+ }
+ .header-right .right-upper .right-upper-list{
+height: 84%;
+width: 100%;
+overflow: auto;
+ }
+ .header-right .right-upper .right-upper-list::-webkit-scrollbar{
+   display: none;
+ }
+ .header-right .right-upper .right-upper-item{
+    width: 95%;
+    height: 3.8rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    display: flex;
+    cursor: pointer;
+ }
+ .header-right .right-upper .right-upper-item:hover{
+ background-color: #0c131f;
+ box-shadow:  0 0 4px #1b2941, 0 0 4px #1b2941;
+ }
+ .header-right .right-upper .right-upper-item img{
+    height: 100%;
+    width: 25%;
+ }
+ .header-right .right-upper .right-upper-item h5{
+    color: white;
+    font-size: 0.7rem;
+    width:6rem;
+    margin-left: 0.7rem;
+    padding-top:1rem;
+    font-weight: 100;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+ .header-right .right-upper .right-upper-item h5 .subtitle{
+    color: darkgray;
+    font-size: 0.5rem;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+ }
+ .header-right .right-upper .right-upper-item .icon-time{
+    color: white;
+    margin-left: 1.7rem;
+    margin-top: 0.9rem;
+ }
+ .header-right .right-upper .right-upper-item .icon-time h2{
+    font-size: 0.5rem;
+    font-weight: bold;
+ }
+
+
+
+ .header-right .right-lower{
+    height: 50%;
+    width: 100%;
+ }
+ .header-right .right-lower .right-lower-heading{
+width: 100%;
+height: 17%;
+display: flex;
+ }
+ .header-right .right-lower .right-lower-heading h5{
+color: white;
+font-size: 1.2rem;
+font-weight: 700;
+letter-spacing: 0.5px;
+margin-top: 0.4rem;
+display: flex;
+margin-left: 0.2rem;
+ }
+ .header-right .right-lower .right-lower-heading .view-all{
+    color: white;
+    font-size: 0.6rem;
+    letter-spacing: 0.4px;
+    margin-left: 3rem;
+    margin-top: 0.9rem;
+ }
+ .header-right .right-lower .right-lower-list{
+height: 83.5%;
+width: 100%;
+overflow: auto;
+ }
+ .header-right .right-lower .right-lower-list::-webkit-scrollbar{
+   display: none;
+ }
+ .header-right .right-lower .right-lower-item{
+    width: 95%;
+    height: 3.8rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    display: flex;
+    cursor: pointer;
+ }
+ .header-right .right-lower .right-lower-item:hover{
+   background-color: #0c131f;
+   box-shadow:  0 0 4px #1b2941, 0 0 4px #1b2941;
+ }
+ .header-right .right-lower .right-lower-item img{
+    height: 100%;
+    width: 25%;
+ }
+ .header-right .right-lower .right-lower-item h5{
+    color: white;
+    font-size: 0.7rem;
+    width:6rem;
+    margin-left: 0.7rem;
+    padding-top:1rem;
+    font-weight: 100;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+ }
+ .header-right .right-lower .right-lower-item h5 .subtitle{
+    color: darkgray;
+    font-size: 0.5rem;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+ }
+ .header-right .right-lower .right-lower-item .icon-time{
+    color: white;
+    margin-left: 1.2rem;
+    margin-top: 0.9rem;
+ }
+ .header-right .right-lower .right-lower-item .icon-time h2{
+    font-size: 0.5rem;
+    font-weight: bold;
+ }
+                                                   /* Header right end  */
+
+
+
+                                                   /* song-status start  */
+
+ header .song-status{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+ }
+ header .song-status img{
+    height: 70%;
+    width: 5%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    border: none;
+ }
+ header .song-status h5{
+    color: white;
+    height: 100%;
+    
+    font-size: 0.7rem;
+margin-left: 0.3rem;
+width: 7rem;
+padding-top: 1rem;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+ }
+ header .song-status h5 .subtitle{
+    color: darkgray;
+    font-size: 0.5rem;
+    margin-left: 0.1rem;
+ }
+ header .song-status .heart-icon{
+    color: darkgray;
+    margin-left: 0.2rem;
+    margin-top: 1.2rem;
+ }
+ header .song-status .dash-icon{
+    color: darkgray;
+    margin-left: 0.2rem;
+    margin-top: 1.2rem;
+ }
+
+ header .song-status .song-status-progressbar-and-other-icons{
+    width: 25rem;
+    margin-left: 0.4rem;
+    padding-top: 0.5rem ;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .icons{
+    color: white;
+    display: flex;
+    justify-content:center;
+    font-size: 3rem;
+ }
+
+ header .song-status .song-status-progressbar-and-other-icons .icons .bi{
+    margin-left: 0.7rem;
+    cursor: pointer;
+    font-size: 18px;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time{
+    display: flex;
+    width: 23rem;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time 
+ .song-progressbar{
+   -webkit-appearance: none;
+   margin-top: 0.3rem;
+width: 24rem;
+height: 0.3rem;
+appearance: none;
+outline: none;
+background-color:rgb(88, 88, 88);
+margin-left: 0.2rem;
+margin-right: 0.2rem;
+border-radius: 50px;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time 
+ .song-progressbar::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   appearance: none;
+   width: 0.8rem;
+   height: 0.8rem;
+   background: #6DD400;
+   border-radius: 50%;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time 
+ .song-progressbar::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   appearance: none;
+   width: 0.8rem;
+   height: 0.8rem;
+   background: #6DD400;
+   border-radius: 50%;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time 
+ .song-progressbar::-webkit-slider-thumb:hover{
+ box-shadow: 0 0 0 5px rgba(225,225,225,0.2);
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time 
+ .song-progressbar::-webkit-slider-thumb:active{
+ box-shadow: 0 0 0 5px rgba(225,225,225,0.5);
+ }
+ .song-present-time,.song-total-time{
+   color: white;
+   font-weight: bold;
+   font-size: 0.7rem;
+ }
+ header .vol{
+    display: flex;
+    width: 15rem;
+    height: 100%;
+    margin-left: 1rem;
+    padding-top:1.2rem;
+ }
+ header .vol svg{
+    margin-left:0.3rem;
+    margin-right: 0.1rem;
+    margin-top: 0.2rem;
+    color: white;
+    cursor: pointer;
+ }
+ header .vol  .vol-progressbar{
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+ }
+ header .vol  .vol-progressbar .vol-pr{
+   -webkit-appearance: none;
+   appearance: none;
+   height: 0.2rem;
+   width: 7rem;
+   border-radius: 50px;
+   background-color:rgb(88, 88, 88);
+ }
+ header .vol  .vol-progressbar .vol-pr::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   appearance: none;
+   width: 0.5em;
+   height: 0.5rem;
+   background: #6DD400;
+   border-radius: 50%;
+ }
+ header .vol  .vol-progressbar .vol-pr::-webkit-slider-thumb:hover{
+   -webkit-appearance: none;
+   appearance: none;
+   width: 0.6rem;
+   height: 0.6rem;
+   background: #6DD400;
+   border-radius: 50%;
+
+                                              /* Song status end  */
+
+
+                                            /* Adding media query  */
+
+ }
+ @media screen and (max-width:1037px) {
+    header .header-left{
+        width: 60%;
+    }
+    header .header-right{
+        width: 40%;
+    }
+    button{
+        width: 4.3rem;
+    }
+ }
+ @media screen and (max-width:990px){
+  header .song-status img{
+   display: none;
+  }
+  header .song-status h5{
+   display: none;
+  }
+  header .song-status .heart-icon{
+   display: none;
+  }
+  header .song-status .dash-icon{
+   display: none;
+  }
+  header .song-status .vol{
+   margin-left: 4rem;
+  }
+  .navbar ul li:nth-child(3) {
+   margin-left: 5.5rem;
+}
+ }
+ @media screen and (max-width:888px){
+   header .song-status .vol{
+      margin-left: 3rem;
+     }
+     .navbar ul li:nth-child(3) {
+      margin-left: 3rem;    
+   }
+ }
+ @media screen and (max-width:865px){
+   header .song-status .vol{
+      margin-left: 2rem;
+     }
+ }
+ @media screen and (max-width:844px){
+   header .song-status .vol{
+      margin-left: 2rem;
+      width: 10rem;
+     }
+     header .vol  .vol-progressbar .vol-pr{
+      -webkit-appearance: none;
+      appearance: none;
+      height: 0.2rem;
+      width: 3rem;
+    }
+    .navbar ul li:nth-child(3) {
+      margin-left: 1.3rem; 
+    }
+   .navbar ul li:nth-child(4) {
+      margin-left: 0.3rem;
+   }
+   .navbar ul li:nth-child(5) {
+      margin-left: 0.3rem;   
+   }
+ }
+ @media screen and (max-width:761px) {
+   .navbar ul li:nth-child(2) {
+  
+      margin-left: 1.5rem;
+   }
+   header .song-status .vol{
+      margin-left: 3rem;
+      width: 10rem;
+     }
+     header .vol  .vol-progressbar .vol-pr{
+      -webkit-appearance: none;
+      appearance: none;
+      height: 0.2rem;
+      width: 2rem;
+    }
+     header .song-status .song-status-progressbar-and-other-icons{
+      width: 98%;
+     width:20rem;
+      margin-left: 0.2rem;
+   }
+   header .song-status .song-status-progressbar-and-other-icons .icons{  
+      width: 90%;
+    margin-left: 0.5rem; 
+   }
+   header .song-status .song-status-progressbar-and-other-icons .icons .bi{
+      margin-left: 0.7rem;
+   }
+   header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time{
+      width: 99%;  
+      margin-left: 0.2rem; 
+ }
+   @media screen and (max-width:704px) {
+      .navbar ul li:nth-child(2) {
+         margin-left: 1rem;
+         font-size: 0.7rem;
+      }
+    .header-right .right-upper .right-upper-heading h5{
+        font-size: 0.9rem;
+        margin-top: 0.9rem;
+    }  
+    .header-right .right-lower .right-lower-heading h5{
+        font-size: 0.9rem;
+        margin-top: 0.9rem;
+    }  
+    button{
+        width:3.5rem
+    }
+ }
+
+ @media screen and (max-width:670px) {
+   header{
+    width: 100%;
+   }
+   }
+   header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time{    
+      width: 99%;
+      margin-left: 0.2rem;   
+   } 
+   header .song-status .vol{
+      margin-left: 5rem;
+   }
+ }
+ @media screen and (max-width:571px) {
+   header .song-status .vol{
+      margin-left: 0.8rem;
+      width: 8rem;
+     }
+     header .vol  .vol-progressbar .vol-pr{
+      -webkit-appearance: none;
+      appearance: none;
+      height: 0.3rem;
+      width: 2.5rem;
+    }
+ }
+ @media screen and (max-width:537px) {
+   header .song-status .song-status-progressbar-and-other-icons{
+     width:20rem;
+      margin-left: 0.2rem;
+   }
+   header .song-status .song-status-progressbar-and-other-icons .icons{
+     
+      width: 90%;
+    margin-left: 0.5rem; 
+   }
+   header .song-status .song-status-progressbar-and-other-icons .icons .bi{
+      margin-left: 0.7rem;
+   }
+   header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time{
+      width: 99%;
+      margin-left: 0.2rem;
+   }
+   @media screen and (max-width:500px) {
+      .navbar ul li:nth-child(2) {
+         display: none;  
+      }
+   }
+ }
+ @media screen and (max-width:495px) {
+    header .header-left .advertisement .data .heading .heading2{
+        margin-left: 3rem;
+    }
+ }
+ @media screen and (max-width:460px) {
+   header .song-status .vol{
+      width: 7rem;
+     }
+     header .vol  .vol-progressbar .vol-pr{
+      -webkit-appearance: none;
+      appearance: none;
+      height: 0.3rem;
+      width: 2.5rem;
+    }
+    header .song-status .song-status-progressbar-and-other-icons{
+     width:18rem;
+      margin-left: 0.2rem;
+   }
+   header .song-status .song-status-progressbar-and-other-icons .icons{
+      width: 85%;
+    margin-left: 0.5rem;
+   }
+  
+   header .song-status .song-status-progressbar-and-other-icons .icons .bi{
+      margin-left: 0.7rem;
+   }
+   header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time{
+      width: 99%;
+      margin-left: 0.2rem;  
+   }
+}
+ @media screen and (max-width:471px) {
+   header .song-status .vol{
+      margin-left: 3px;
+ }
+}
+@media screen and (max-width:448px) {
+   .navbar ul li:nth-child(3) {
+      width: 2rem;
+      margin-top: 0.9rem;
+      border: none;
+      color: white;
+      background-color: var(--background-color);
+      margin-left: 3rem;
+   }
+   .navbar ul li:nth-child(4) {
+      margin-left: 5rem;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+   }
+   .navbar ul li:nth-child(5) {
+      margin-top: 0.5rem;
+   }
+   .navbar ul li:nth-child(3) input{
+      display: none;
+   }
+   #mic-icon{
+      display: none;
+   }
+}
+ @media screen and (max-width:431px) {
+    header .header-left{
+        width: 100%;
+    }
+   header .header-right{
+    display: none;
+   }
+   header .song-status img{
+    display: none;
+   }
+   header .song-status h5{
+    display: none;
+   }
+   header .song-status .heart-icon{
+    display: none;
+   }
+   header .song-status .dash-icon{
+    display: none;
+   }
+   header .vol{
+    display: none;
+   }
+   header .header-left .Latest-{
+      display: block;
+   }
+   header .header-left.advertisement{
+    display: block;
+   }
+   header .song-status .dash-icon{
+    color: darkgray;
+    margin-left: 0.2rem;
+    margin-top: 1.2rem;
+ }
+ header .header-left .list{
+   display: none;
+ }
+ header .song-status .song-status-progressbar-and-other-icons{
+    width: 98%;
+    margin-left: 0.2rem;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .icons{
+    width: 90%; 
+ }
+ header .song-status .song-status-progressbar-and-other-icons .icons .bi{
+    margin-left: 0.7rem;
+ }
+ header .song-status .song-status-progressbar-and-other-icons .song-progressbar-and-time{
+    width: 90%;
+    margin-left: 0.5rem;
+ }
+ header .header-left .Latest-Hindi{
+   display: block;
+ }
+ header .header-left .Latest-English{
+   display: block;
+ }
+ }
+ @media screen and (max-width:431px) {
+   header .header-left .advertisement{
+    margin-left: 0.8rem;
+   }
+   header .header-left .list{
+    margin-left: 0.8rem;
+   }
+ }
+ @media screen and (max-width:355px) {
+   .navbar ul li:nth-child(4) {
+      margin-left: 3rem;
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+   }
+ }
+ @media screen and (max-width:313px) {
+   .navbar ul li:nth-child(4) {
+      margin-left: 2rem;
+      margin-right: 0.3rem;
+      margin-top: 0.5rem;
+   }
+ }
+ @media screen and (max-width:290px) {
+   .navbar ul li:nth-child(3) {
+      margin-left: 1rem;
+      margin-top: 0.8rem;
+      width: 2rem;
+   }
+   .navbar ul li:nth-child(4) {
+      margin-left: 1.7rem;
+      margin-right: 0.2rem;
+      margin-top: 0.5rem;
+   }
+ }
+ @media screen and (max-width:262px) {
+   .navbar ul li:nth-child(4) {
+      margin-left: 1rem;
+      margin-right: 0.2rem;
+      margin-top: 0.5rem;
+   }
+ }
+ @media screen and (max-width:250px) {
+   .navbar ul li:nth-child(4) {
+      margin-left: 0.5rem;
+      margin-right: 0.2rem;
+      margin-top: 0.5rem;
+   }
+ }
